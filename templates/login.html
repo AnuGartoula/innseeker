@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking - Login</title>
+  <style>
+    /* CSS styles for the login page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0F172B;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #F1F8FF;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color:#FEA116;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 3px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #543300;
+    }
+
+    .error-message {
+      color: #f31e0e;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <div class="error-message">
+        <!-- Error messages can be displayed here (e.g., "Invalid username or password") -->
+      </div>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
