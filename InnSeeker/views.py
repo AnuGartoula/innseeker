@@ -2,8 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
+    abc = {"abc":"hellow world","cde":"cellow world"}
     #return HttpResponse("This is homepage")
-    return render(request,'index.html')
+    return render(request,'index.html',abc)
 def about(request):
     return render(request,'about.html')
 def booking(request):
