@@ -121,7 +121,6 @@ STATICFILES_DIRS = [
     
 ]
 
-print("STATICFILES_DIRS",STATICFILES_DIRS)
 
     
 
